@@ -1,0 +1,128 @@
+
+h1 {
+    text-align: center;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(99, 161, 7);
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: greenyellow;
+}
+
+h3 {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    margin-top: 15px;
+}
+
+body {
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.container { width: 300px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center; }
+
+
+.container2 {
+    width: 320px;
+    background-color: rgb(13, 212, 169);
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px ;
+    
+}
+
+.ContainerOpções2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+input { width: 100%;
+        padding: 10px;
+        margin-bottom: 
+        15px; border: 1px solid #ccc;
+        border-radius: 6px; font-size: 14px; 
+    }
+
+.button1 {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: gray;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button1:hover {
+    background-color: rgb(19, 133, 240);
+}
+
+.button2 { background-color: rgb(4, 121, 8);
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    width: 100%;
+    margin: 10px auto; }
+
+    .button2:hover {
+    background-color: rgb(56, 194, 11);
+}
+
+footer { background-color: #fa0606;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    bottom: 0;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    left: 0;
+    box-sizing: border-box;
+
+    }
+
+.FooterText {
+    color: black;
+    margin: 0;
+            }
