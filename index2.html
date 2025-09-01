@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site2</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+    <script src="index2.js"></script>
+
+
+<div class="container2">
+
+<h1>
+    Benefícios: Adquira já um:
+</h1>
+
+    <h1 id= "h1">Selecione uma das opções</h1>
+
+
+<div class="ContainerOpções2">
+
+    <ul><button class="button1" onclick="button1('Desconto Progressivo')">Desconto Progressivo</button>
+    <button class="button1" onclick="button1('Frete Grátis')">Frete Grátis</button>
+    <button class="button1" onclick="button1('Desconto Relâmpago')">Desconto Relâmpago</button>
+    <button class="button1" onclick="button1('Cupom de Boas-Vindas')">Cupom de Boas-Vindas</button>
+    <button class="button1" onclick="button1('Leve 2, Pague 1')">Leve 2, Pague 1</button>
+    <button class="button1" onclick="button1('Cashback')">Cashback</button>
+</ul>
+
+<button class="button2" onclick="Benefícios()">Validar</button>
+</div>
+
+    <datalist id="listaNomes2"></datalist>
+<div id="box_login2"></div>
+<div id="detalhes" style="margin-top:20px; font-weight:bold; color:darkblue;"></div>
+<div id="mensagemLogin" style="margin-top:20px; font-style:italic; color:green;"></div>
+</div>
+
+<script src="index2.js"></script>
+
+<footer>
+
+        &copy; 2025 Tecnocursos. Todos os Direitos Reservados.
+        <p>
+            Telefone:(31)93333-4444
+        </p>
+
+    <a href="https://www.instagram.com/"style="text-decoration:none; color: blue;">Instagram</a>
+
+    </footer>
+
+    <script>
+        
+async function button1(buttonId) {
+    try {
+        document.getElementById("detalhes").innerHTML = "Carregando informações...";
+
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        let mensagens = {
+            "Desconto Progressivo": "Quanto mais produtos, maior o desconto.",
+            "Frete Grátis": "Você não paga pelo envio do produto.",
+            "Desconto Relâmpago": "Promoção rápida por tempo limitado.",
+            "Cupom de Boas-Vindas": "Desconto especial na primeira compra.",
+            "Leve 2, Pague 1": "Pague por um e leve dois produtos.",
+            "Cashback": "Parte do valor gasto volta para você em crédito."
+        };
+
+        if (mensagens[buttonId]) {
+            document.getElementById("detalhes").innerHTML = mensagens[buttonId];
+        } else {
+            document.getElementById("detalhes").innerHTML = "Opção não encontrada.";
+        }
+
+    } catch (erro) {
+        document.getElementById("detalhes").innerHTML = "Erro: " + erro.message;
+        console.error("Erro capturado:", erro);
+    }
+}
+</script>
+    </body>
+</html>
